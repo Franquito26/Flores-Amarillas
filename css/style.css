@@ -21,7 +21,7 @@ body{
 }
 @keyframes glow{
     0%, 100%{
-        color: #fff;
+        color: #ffffff;
         text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
     }
     10%, 90%{
@@ -70,7 +70,7 @@ body{
 }
 
 .description{
-    color: #fbff00;
+    color: #e5ff00;
 }
 
 /* Estilo para el botón */
@@ -93,7 +93,7 @@ body{
   
   /* Efecto de resplandor al pasar el cursor sobre el botón */
   .button button:hover {
-    background-color: orange; /* Cambia el color de fondo al pasar el mouse a naranja */
+    background-color: rgb(238, 255, 0); /* Cambia el color de fondo al pasar el mouse a naranja */
     box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
   }
   
