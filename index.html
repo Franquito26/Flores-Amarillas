@@ -4,34 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <title>MI REGALO</title>
+    <title>FLORES</title>
 </head>
 <body>
-    <div class="greetings">
+    <h1>Feliz Primavera mi reina🥰😘</h1>
+    <span class="Posdata">pd: Te quiero mucho💞</span>
+    <div class="night"></div>
+    <div class="flowers">
+        <!-- Aquí irían tus flores -->
+    </div>
 
-        <span>H</span>
-        <span>O</span>
-        <span>L</span>
-        <span>A</span>
-    </div>
-    <div class="greetings">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="description">
-        <span>Tengo un regalo especial para vos Meli💘!!</span>
-    </div>
-    <div class="button">
-        <button>
-            <a href="FLORES.html">Presiona Aquí</a>
-        </button>
-        
-    </div>
+    <audio id="myAudio" loop>
+        <source src="./img/Floricienta.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('myAudio');
+            audio.play().catch(function(error) {
+                console.log("Error al reproducir audio:", error);
+            });
+        };
+    </script>
 </body>
 </html>

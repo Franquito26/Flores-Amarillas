@@ -10,6 +10,8 @@
 </head>
 
 <body class="container">
+  <h1>Feliz Primavera mi reina🥰😘</h1>
+  <span class="Posdata">pd: Te quiero mucho💞</span>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -307,6 +309,23 @@
         </div>
       </div>
     </div>
+    <audio id="myAudio" loop>
+      <source src="./img/Floricienta.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+
+    // Reproducir música al cargar la página
+    window.onload = function() {
+        audio.play().then(() => {
+            localStorage.setItem('audioPlaying', 'true');
+        }).catch(function(error) {
+            console.log("Error al reproducir audio:", error);
+        });
+    };
+</script>
     <script src="main.js"></script>
   </body>
 </html>
